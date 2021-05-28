@@ -14,17 +14,16 @@
 
 // Exercise 2:
 
-    function upper_str(str){
-        let upperSplit_str = str.toLowerCase().split(' ');
-        for (let i = 0; i<upperSplit_str.length; i++) {
-            if (upperSplit_str.length[i] < upperSplit_str.length) {
-                upperSplit_str[i].charAt(0).toUpperCase();
-            }
-            str = upperSplit_str.join(" ");
-        }
-        return str;
+    function nameUser(str) {
+    let nameUserSplit = str.toLowerCase().split(' ');
+    let newname = '';
+    for(let i = 0; i<nameUserSplit.length; i++) {
+        newname += nameUserSplit[i].charAt(0).toUpperCase() + nameUserSplit[i].slice(1) + " ";
     }
-    console.log(upper_str('bui quang thang'));
+    return newname;
+}
+
+console.log(nameUser('thang rat dep trai nha'));
 
 // Exercise 3:
 
